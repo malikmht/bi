@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+ion-menu-button {
+  color: var(--ion-color-primary);
+}
+
+#container {
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 24px;
+  line-height: 22px;
+  color: #000000;
+  margin: 0;
+  vertical-align: middle;
+  font-family: "Times New Roman";
+  text-align-all: right;
+  font-weight: bolder;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.gridCollecte {
+  font-family: "Times New Roman";
+  vertical-align: middle;
+  font-size: calc(1.5em + 2vw);
+  border-radius: 10px;
+  text-align: right;
+  font-weight: normal;
+  margin-right: 5px;
+  padding: 0px;
+  background-color: #f5f6f9;
+}
+
+.trans {
+  vertical-align: middle;
+  font-family: "Perpetua";
+  font-size: 16px;
+  text-align: left;
+  font-weight: normal;
+  margin-right: 5px;
+  padding: 5px;
+  background-color: beige;
+}
+
+ion-avatar {
+  max-width: 25px;
+  max-height: 25px;
+}

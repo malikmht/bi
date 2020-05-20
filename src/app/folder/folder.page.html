@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="success">
+        <ion-buttons slot="start">
+            <ion-menu-button>
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-buttons slot="end" (click)="chanetrans()">
+            <ion-avatar size="5">
+                <img src="../../assets/icon/fr.png" height="10" width="20"  >
+            </ion-avatar>
+        </ion-buttons>
+        <ion-title *ngIf="fassil">{{ fassil.title  }}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" [scrollTop]="st">
+    <!--<ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event,2)"  position="top">
+        <ion-infinite-scroll-content
+                loadingSpinner="bubbles"
+                loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll> -->
+
+
+      <!-- <ion-card (swiperight)="loadData($event,1)"  (swipeleft)="loadData($event,2)">
+            <ion-card-content>  -->
+<div style="height:auto;overflow-y: scroll;">
+                <ion-list *ngIf="kalam" >
+                    <ion-grid *ngFor="let k of kalam" (swiperight)="loadData($event,1)"  (swipeleft)="loadData($event,2)" >
+                        <ion-row style="padding: 5px" class="gridCollecte row">
+                            <ion-col>
+                                <p>{{k.text}}</p>
+                                <p dir="ltr" class="trans" *ngIf="trans"> {{k.text_fr}}</p>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-list>
+</div>
+          <!--  </ion-card-content>
+        </ion-card> -->
+
+
+        <!--  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event,1)" >
+             <ion-infinite-scroll-content
+                     loadingSpinner="bubbles"
+                     loadingText="Loading more data...">
+             </ion-infinite-scroll-content>
+         </ion-infinite-scroll> -->
+
+</ion-content>

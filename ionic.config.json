@@ -1,0 +1,8 @@
+{
+  "name": "burda",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
